@@ -264,7 +264,7 @@ Please adhere to this project's [code of conduct](CODE_OF_CONDUCT.md).
 
 ![myarm](./demo_img/myarm300/myarm300.png)
 
-[mycobot pro 630](./mycobot_description/urdf/mycobot_pro_630/mycobot_pro_630.urdf)
+[mycobot pro 630](./mycobot_description/urdf/mycobot_pro_630/pro630.urdf)
 
 ![pro630](./demo_img/pro630/pro630.png)
 

@@ -3,7 +3,7 @@
   <name>mycobot_630_moveit_three_grip</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the firefighter with the MoveIt Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the pro630_three_gripper with the MoveIt Motion Planning Framework
   </description>
   <author email="weijian.wang@elephantrobotics.com">wangweijian</author>
   <maintainer email="weijian.wang@elephantrobotics.com">wangweijian</maintainer>
