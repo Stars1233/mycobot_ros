@@ -67,7 +67,7 @@ def control_loop():
         if arm is not None:
             try:
                 # Reduce speed to prevent accumulation.
-                # mc.write_angles(arm, 800)
+                mc.write_angles(arm, 800)
                 pass
             except Exception as e:
                 print("Arm control error:", e)
@@ -75,8 +75,8 @@ def control_loop():
         # Gripper Control (Sent only when changed)
         if grip is not None and grip != last_gripper:
             try:
-                # mc.force_set_angle(14, grip)
-                # last_gripper = grip
+                mc.force_set_angle(14, grip)
+                last_gripper = grip
                 pass
             except Exception as e:
                 print("Gripper control error:", e)
@@ -95,13 +95,13 @@ def listener():
     print("Connecting to robot:", ip, port)
 
     # init robot
-    # mc = ElephantRobot(ip, int(port))
+    mc = ElephantRobot(ip, int(port))
 
-    # if not mc.start_client():
-    #     print("Failed to connect robot")
-    #     sys.exit(1)
+    if not mc.start_client():
+        print("Failed to connect robot")
+        sys.exit(1)
 
-    # mc.set_speed(90)
+    mc.set_speed(90)
 
     # subscriber  joint_states
     rospy.Subscriber("joint_states", JointState, callback)
