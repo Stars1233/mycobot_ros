@@ -16,7 +16,7 @@ class GroundAdder:
     def add_ground(self):
         # 定义地面的姿态
         ground_pose = PoseStamped()
-        ground_pose.header.frame_id = "base"  # 基座坐标系
+        ground_pose.header.frame_id = "base_link"  # 基座坐标系
         ground_pose.pose.position.x = 0.0
         ground_pose.pose.position.y = 0.0
         ground_pose.pose.position.z = -0.01  # 地面位于基座下方 0.01 米
