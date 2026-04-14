@@ -1205,7 +1205,7 @@ def main():
     print("  2: 滑块 → 真实 MyCobot Pro 450 (仅控制真实机械臂)")
     print("="*60)
     print("⚠️  注意: 两种模式都需要先启动slider.launch来显示滑块GUI")
-    print("    roslaunch mycobotpro450_Gazebo slider.launch")
+    print("    roslaunch mycobotpro450_gazebo slider.launch")
     print("="*60)
     inp = input("请输入 1 或 2 (默认 2): ").strip()
     

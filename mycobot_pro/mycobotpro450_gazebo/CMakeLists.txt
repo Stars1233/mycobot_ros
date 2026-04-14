@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(mycobotpro450_Gazebo)
+project(mycobotpro450_gazebo)
 
 find_package(catkin REQUIRED)
 

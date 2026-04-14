@@ -137,7 +137,7 @@ class PIDAngleEffectAnalyzer:
             print("")
         
         print("🔧 **修改方法：**")
-        print("编辑文件: mycobotpro450_Gazebo/config/ros_controllers.yaml")
+        print("编辑文件: mycobotpro450_gazebo/config/ros_controllers.yaml")
         print("")
         print("找到这一段：")
         print("```yaml")

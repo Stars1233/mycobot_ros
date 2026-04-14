@@ -46,10 +46,10 @@ MyCobot_450_m5-Gazebo使用说明
 
 ```bash
 在src/mycobot_ros/mycobot_pro路径下执行
-sudo chmod -R 777 mycobotpro450_Gazebo/scripts/follow_display_gazebo.py
-sudo chmod -R 777 mycobotpro450_Gazebo/scripts/slider_control_gazebo.py
-sudo chmod -R 777 mycobotpro450_Gazebo/scripts/teleop_keyboard_gazebo.py
-sudo chmod -R 777 mycobotpro450_Gazebo/scripts/coords_broadcaster.py
+sudo chmod -R 777 mycobotpro450_gazebo/scripts/follow_display_gazebo.py
+sudo chmod -R 777 mycobotpro450_gazebo/scripts/slider_control_gazebo.py
+sudo chmod -R 777 mycobotpro450_gazebo/scripts/teleop_keyboard_gazebo.py
+sudo chmod -R 777 mycobotpro450_gazebo/scripts/coords_broadcaster.py
 roscore
 
 ```
@@ -60,7 +60,7 @@ roscore
 ```bash
 
 source devel/setup.bash
-roslaunch mycobotpro450_Gazebo slider.launch
+roslaunch mycobotpro450_gazebo slider.launch
 
 ```
 
@@ -71,7 +71,7 @@ roslaunch mycobotpro450_Gazebo slider.launch
 ```bash
 
 source devel/setup.bash
-rosrun mycobotpro450_Gazebo coords_broadcaster.py
+rosrun mycobotpro450_gazebo coords_broadcaster.py
 
 ```
 
@@ -80,7 +80,7 @@ rosrun mycobotpro450_Gazebo coords_broadcaster.py
 ```bash
 
 source devel/setup.bash
-rosrun  mycobotpro450_Gazebo slider_control_gazebo.py
+rosrun  mycobotpro450_gazebo slider_control_gazebo.py
 
 ```
 
@@ -97,7 +97,7 @@ rosrun  mycobotpro450_Gazebo slider_control_gazebo.py
 ```bash
 
 source devel/setup.bash
-roslaunch  mycobotpro450_Gazebo follow.launch 
+roslaunch  mycobotpro450_gazebo follow.launch 
 
 ```
 
@@ -110,7 +110,7 @@ roslaunch  mycobotpro450_Gazebo follow.launch
 ```bash
 
 source devel/setup.bash
-rosrun  mycobotpro450_Gazebo follow_display_gazebo.py 
+rosrun  mycobotpro450_gazebo follow_display_gazebo.py 
 
 ```
 
@@ -129,7 +129,7 @@ rosrun  mycobotpro450_Gazebo follow_display_gazebo.py
 ```bash
 
 source devel/setup.bash
-roslaunch  mycobotpro450_Gazebo teleop_keyboard.launch 
+roslaunch  mycobotpro450_gazebo teleop_keyboard.launch 
 
 ```
 
@@ -142,7 +142,7 @@ roslaunch  mycobotpro450_Gazebo teleop_keyboard.launch
 ```bash
 
 source devel/setup.bash
-rosrun  mycobotpro450_Gazebo teleop_keyboard_gazebo.py 
+rosrun  mycobotpro450_gazebo teleop_keyboard_gazebo.py 
 
 ```
 

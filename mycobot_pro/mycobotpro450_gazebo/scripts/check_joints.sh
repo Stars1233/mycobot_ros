@@ -13,7 +13,7 @@ fi
 # 检查Gazebo是否运行
 if ! pgrep -x "gzserver" > /dev/null; then
     echo "⚠️  Gazebo仿真未运行，请先启动Gazebo"
-    echo "   使用命令: roslaunch mycobotpro450_Gazebo gazebo.launch"
+    echo "   使用命令: roslaunch mycobotpro450_gazebo gazebo.launch"
     exit 1
 fi
 
