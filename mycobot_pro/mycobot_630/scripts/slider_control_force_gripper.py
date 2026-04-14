@@ -18,15 +18,22 @@ def callback(data):
     """callback function"""
     # rospy.loginfo(rospy.get_caller_id() + "%s", data.position)
     data_list = []
+    gripper_value = 0
     for index, value in enumerate(data.position):
-        radians_to_angles = round(math.degrees(value), 3)
-        data_list.append(radians_to_angles)
+        if index < 6:
+            radians_to_angles = round(math.degrees(value), 3)
+            data_list.append(radians_to_angles)
+        else:
+            # Map force gripper value to 0-100 scale
+            mapped_value = value * 100
+            gripper_value = int(round(mapped_value, 2))
     
     data_list[1] = round(data_list[1] - 90, 3)
     data_list[3] = round(data_list[3] - 90, 3)
         
-    rospy.loginfo(rospy.get_caller_id() + "%s", data_list)
-    mc.write_angles(data_list, 800)
+    rospy.loginfo(f'joint_list: {data_list}, gripper_value: {gripper_value}')
+    # mc.write_angles(data_list, 800)
+    # mc.force_set_angle(14, gripper_value)
 
 def listener():
     global mc
@@ -39,7 +46,7 @@ def listener():
     # START CLIENT
     res = mc.start_client()
     if not res:
-        # print('res:', res)
+        print('res:', res)
         sys.exit(1)
 
     mc.set_speed(90)

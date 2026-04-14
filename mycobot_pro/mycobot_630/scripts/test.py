@@ -7,20 +7,22 @@ from math import pi
 import time
 from sensor_msgs.msg import JointState
 from std_msgs.msg import Header
-from pymycobot.mycobotpro630 import mycobot
+# from pymycobot.mycobotpro630 import mycobot
 import rosnode
 
-mc = ElephantRobot('192.168.1.159', 5001, debug=True)
-
+mc = ElephantRobot('192.168.1.191', 5001, debug=True)
+# print(mc.get_angles())
 res = mc.start_client()
+
 if not res :
     print('quit')
     sys.exit(1)
 
 print(mc.get_angles())
+print(mc.force_set_speed(14, 100))
 
 
-
+exit(1)
     
 def linear_transform(x):
     # 两个已知数据点
