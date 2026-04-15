@@ -4,7 +4,7 @@ moveit_setup_assistant_config:
     relative_path: urdf/mycobot_pro_630/pro630.urdf
     xacro_args: "--inorder "
   SRDF:
-    relative_path: config/firefighter.srdf
+    relative_path: config/Pro630.srdf
   CONFIG:
     author_name: wangweijian
     author_email: weijian.wang@elephantrobotics.com
